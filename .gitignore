@@ -1,0 +1,9 @@
+.vs/  
+[Xx]64/  
+[Dd]ebug/  
+[Rr]elease/  
+*.obj  
+*.pdb  
+*.exe  
+*.ilk  
+*.tlog/ 
