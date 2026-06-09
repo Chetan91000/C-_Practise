@@ -1,8 +1,9 @@
 #include<iostream>
+#include<string>
 using std::cout;
 using std::cin;
 using std::endl;
-
+using std::string;
 #include "Func.h"
 
 
@@ -21,6 +22,17 @@ int main() {
 	if (test(3.8)) {
 		cout << " 3.8 passes the test " << endl;
 	}
+	string name;
+	cout << "Whats Your name ?" << endl;
+	cin >> name;
 
+	if (name == "Chetan") {
+		cout << "Welcome user" << endl;
+	}
+	else {
+		cout << "Not My nigga " + name << "14 " << endl;
+	}
+	int len = name.length();
+	cout << len;
 	return 0;
 }
