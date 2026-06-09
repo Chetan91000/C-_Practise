@@ -18,5 +18,13 @@
     <ClCompile Include="Output.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Functio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

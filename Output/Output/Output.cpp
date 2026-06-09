@@ -3,23 +3,9 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-double add(double a, double b) {
-	return a + b;
-}
+#include "Func.h"
 
-double add(double a, double b, double c) {
-	return a + b + c;
 
-}
-
-bool test(bool a) {
-	return a;
-}
-
-bool test(double x) {
-	return x > 0;
-
-}
 
 int main() {
 	double total = add(3.5, 4.4);
@@ -33,7 +19,7 @@ int main() {
 			
 	}
 	if (test(3.8)) {
-		cout << "3.8 passes the test " << endl;
+		cout << " 3.8 passes the test " << endl;
 	}
 
 	return 0;
