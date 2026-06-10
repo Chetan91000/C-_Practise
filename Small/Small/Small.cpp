@@ -1,21 +1,37 @@
-// Small.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include<iostream>
+#include<string>
 
-#include <iostream>
+using std::cout;
+using std::endl;
+using std::cin;
+using std::string;
 
-int main()
-{
-    std::cout << "Hello World!\n";
-    return 0;
+int main() {
+	string s1{}, s2{};
+	cout << "Enter a name whose lenght you want o compare :" << endl;
+	/*cin >> s1;*/
+	getline(cin, s1);
+	cout << "Enter another name whose lenght you want o compare :" << endl;
+	/*cin >> s2*/;
+	getline(cin, s2);
+	int len1{}, len2{};
+	len1 = s1.length();
+	len2 = s2.length();
+
+	if (len1 == len2) {
+		cout << s1 << " and " << s2 << " are of equal lengths " << endl;
+	}
+	else if(len1>len2){
+		cout << "The first Line is longer" << endl;
+	}
+	else {
+		cout << " the Second Line is longer" << endl;
+	}
+
+
+
+
+
+	return 0;
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
